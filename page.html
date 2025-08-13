@@ -1,6 +1,30 @@
-<video id="dash" controls playsinline width="800"></video>
-<script src="https://ogladaj.fun/tv/?id=tvn24"></script>
-<script>
-  const player = dashjs.MediaPlayer().create();
-  player.initialize(document.getElementById('dash'), 'https://ogladaj.fun/tv/?id=tvn24', true);
-</script>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TVN24 – transmisja</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe 
+    src="https://ogladaj.fun/tv/?id=tvn24" 
+    allowfullscreen 
+    scrolling="no">
+  </iframe>
+</body>
+</html>
